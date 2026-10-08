@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f3a24">
+<title>AgroVerde · Enlaces</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
+<style>
+  html,body{margin:0;padding:0;background:#eef1ea;-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
+  a{color:#0f3a24;text-decoration:none}
+  a:hover{color:#1d5c39}
+  *{box-sizing:border-box}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(150,220,90,.6)}70%{box-shadow:0 0 0 7px rgba(150,220,90,0)}100%{box-shadow:0 0 0 0 rgba(150,220,90,0)}}
+
+  button{font-family:inherit}
+
+  .icon-btn{transition:background .15s,transform .1s}
+  .icon-btn:hover{background:rgba(255,255,255,.18)}
+  .icon-btn:active{transform:scale(.94)}
+
+  .cta-wa{transition:transform .12s,background .15s}
+  .cta-wa:hover{background:#d2f292;color:#0f3a24}
+  .cta-wa:active{transform:scale(.98)}
+
+  .social-link{transition:transform .12s,box-shadow .15s}
+  .social-link:hover{box-shadow:0 2px 4px rgba(20,33,26,.06),0 10px 24px rgba(20,33,26,.10);color:#14211a}
+  .social-link:active{transform:scale(.98)}
+</style>
+</head>
+<body>
+<div style="min-height:100vh;font-family:'DM Sans',system-ui,sans-serif;color:#14211a;background:#eef1ea;display:flex;justify-content:center">
+  <main style="width:100%;max-width:440px;padding:14px 14px 32px;display:flex;flex-direction:column;gap:14px">
+
+    <section style="position:relative;background:#0f3a24;border-radius:28px;padding:20px 20px 20px;color:#ffffff;display:flex;flex-direction:column;gap:18px;overflow:hidden;box-shadow:0 18px 40px -18px rgba(15,58,36,.55)">
+      <div style="position:absolute;right:-60px;top:-60px;width:200px;height:200px;border-radius:50%;background:#164c30"></div>
+      <div style="position:relative;display:flex;justify-content:space-between;align-items:center">
+        <div style="display:flex;align-items:center;gap:8px;padding:7px 12px 7px 10px;border-radius:999px;background:rgba(255,255,255,.1);font-size:13px;font-weight:500">
+          <span id="status-dot" style="width:8px;height:8px;border-radius:50%;background:#f0a35e;animation:none"></span>
+          <span id="status-label">Cargando horario…</span>
+        </div>
+        <button id="share-btn" aria-label="Compartir" class="icon-btn" style="width:44px;height:44px;border-radius:50%;border:none;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;cursor:pointer">
+          <span style="width:20px;height:20px;background:#ffffff;mask:url(https://unpkg.com/lucide-static@0.452.0/icons/share-2.svg) center/contain no-repeat;-webkit-mask:url(https://unpkg.com/lucide-static@0.452.0/icons/share-2.svg) center/contain no-repeat"></span>
+        </button>
+      </div>
+
+      <div style="position:relative;display:flex;align-items:center;gap:14px">
+        <div style="width:76px;height:76px;border-radius:22px;background:#c4ec7c;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:30px;letter-spacing:-1px;color:#0f3a24">AV</div>
+        <div style="display:flex;flex-direction:column;gap:6px;min-width:0">
+          <h1 style="margin:0;font-family:'Bricolage Grotesque',sans-serif;font-size:30px;font-weight:800;letter-spacing:-0.8px;line-height:1">AgroVerde</h1>
+          <div style="display:flex;flex-wrap:wrap;gap:6px">
+            <span style="font-size:12px;font-weight:500;padding:4px 9px;border-radius:999px;border:1px solid rgba(255,255,255,.22);color:#dfeee3">Insumos agrícolas</span>
+            <span style="font-size:12px;font-weight:500;padding:4px 9px;border-radius:999px;border:1px solid rgba(255,255,255,.22);color:#dfeee3">Asesoría de cultivos</span>
+          </div>
+        </div>
+      </div>
+
+      <p style="position:relative;margin:0;font-size:17px;line-height:1.5;color:#e6f1e9;text-wrap:pretty">Cuéntanos qué cultivo tienes y qué necesitas, y nuestro equipo te orientará.</p>
+
+      <a id="wa-link" href="#" target="_blank" rel="noopener" class="cta-wa" style="position:relative;display:flex;align-items:center;gap:14px;padding:12px 14px 12px 12px;border-radius:20px;background:#c4ec7c;color:#0f3a24">
+        <div style="width:48px;height:48px;border-radius:14px;background:#0f3a24;display:flex;align-items:center;justify-content:center;flex-shrink:0"><img src="https://cdn.simpleicons.org/whatsapp/c4ec7c" alt="" style="width:24px;height:24px"></div>
+        <div style="flex:1;display:flex;flex-direction:column;gap:1px"><span style="font-size:18px;font-weight:700">¡Cotiza aquí!</span><span style="font-size:14px;color:#2d5a3e">Escríbenos por WhatsApp</span></div>
+        <div style="width:36px;height:36px;border-radius:50%;background:#0f3a24;display:flex;align-items:center;justify-content:center;flex-shrink:0"><span style="width:18px;height:18px;background:#c4ec7c;mask:url(https://unpkg.com/lucide-static@0.452.0/icons/arrow-up-right.svg) center/contain no-repeat;-webkit-mask:url(https://unpkg.com/lucide-static@0.452.0/icons/arrow-up-right.svg) center/contain no-repeat"></span></div>
+      </a>
+    </section>
+
+    <section style="display:flex;flex-direction:column;gap:10px">
+      <h2 style="margin:8px 4px 0;font-size:13px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:#56665b">Encuéntranos en</h2>
+      <a id="fb-link" href="#" target="_blank" rel="noopener" class="social-link" style="display:flex;align-items:center;gap:14px;padding:12px 16px 12px 12px;background:#ffffff;border-radius:20px;box-shadow:0 1px 2px rgba(20,33,26,.05),0 4px 14px rgba(20,33,26,.06);color:#14211a">
+        <div style="width:48px;height:48px;border-radius:14px;background:#e9f0fd;display:flex;align-items:center;justify-content:center;flex-shrink:0"><img src="https://cdn.simpleicons.org/facebook/1877f2" alt="" style="width:24px;height:24px"></div>
+        <div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:1px"><span style="font-size:16px;font-weight:700">Facebook</span><span style="font-size:14px;color:#56665b">¡Conoce nuestras soluciones!</span></div>
+        <span style="width:20px;height:20px;background:#9aa69e;mask:url(https://unpkg.com/lucide-static@0.452.0/icons/chevron-right.svg) center/contain no-repeat;-webkit-mask:url(https://unpkg.com/lucide-static@0.452.0/icons/chevron-right.svg) center/contain no-repeat"></span>
+      </a>
+      <a id="ig-link" href="#" target="_blank" rel="noopener" class="social-link" style="display:flex;align-items:center;gap:14px;padding:12px 16px 12px 12px;background:#ffffff;border-radius:20px;box-shadow:0 1px 2px rgba(20,33,26,.05),0 4px 14px rgba(20,33,26,.06);color:#14211a">
+        <div style="width:48px;height:48px;border-radius:14px;background:#fdeaf0;display:flex;align-items:center;justify-content:center;flex-shrink:0"><img src="https://cdn.simpleicons.org/instagram/e4405f" alt="" style="width:24px;height:24px"></div>
+        <div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:1px"><span style="font-size:16px;font-weight:700">Instagram</span><span style="font-size:14px;color:#56665b">Visítanos aquí</span></div>
+        <span style="width:20px;height:20px;background:#9aa69e;mask:url(https://unpkg.com/lucide-static@0.452.0/icons/chevron-right.svg) center/contain no-repeat;-webkit-mask:url(https://unpkg.com/lucide-static@0.452.0/icons/chevron-right.svg) center/contain no-repeat"></span>
+      </a>
+      <a id="tiktok-link" href="#" target="_blank" rel="noopener" class="social-link" style="display:flex;align-items:center;gap:14px;padding:12px 16px 12px 12px;background:#ffffff;border-radius:20px;box-shadow:0 1px 2px rgba(20,33,26,.05),0 4px 14px rgba(20,33,26,.06);color:#14211a">
+        <div style="width:48px;height:48px;border-radius:14px;background:#eceeec;display:flex;align-items:center;justify-content:center;flex-shrink:0"><img src="https://cdn.simpleicons.org/tiktok/111111" alt="" style="width:24px;height:24px"></div>
+        <div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:1px"><span style="font-size:16px;font-weight:700">TikTok</span><span style="font-size:14px;color:#56665b">Todo lo que necesitas, aquí</span></div>
+        <span style="width:20px;height:20px;background:#9aa69e;mask:url(https://unpkg.com/lucide-static@0.452.0/icons/chevron-right.svg) center/contain no-repeat;-webkit-mask:url(https://unpkg.com/lucide-static@0.452.0/icons/chevron-right.svg) center/contain no-repeat"></span>
+      </a>
+      <a id="web-link" href="#" target="_blank" rel="noopener" class="social-link" style="display:flex;align-items:center;gap:14px;padding:12px 16px 12px 12px;background:#ffffff;border-radius:20px;box-shadow:0 1px 2px rgba(20,33,26,.05),0 4px 14px rgba(20,33,26,.06);color:#14211a">
+        <div style="width:48px;height:48px;border-radius:14px;background:#e3eee5;display:flex;align-items:center;justify-content:center;flex-shrink:0"><span style="width:24px;height:24px;background:#0f3a24;mask:url(https://unpkg.com/lucide-static@0.452.0/icons/globe.svg) center/contain no-repeat;-webkit-mask:url(https://unpkg.com/lucide-static@0.452.0/icons/globe.svg) center/contain no-repeat"></span></div>
+        <div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:1px"><span style="font-size:16px;font-weight:700">Sitio web</span><span style="font-size:14px;color:#56665b">Más información</span></div>
+        <span style="width:20px;height:20px;background:#9aa69e;mask:url(https://unpkg.com/lucide-static@0.452.0/icons/chevron-right.svg) center/contain no-repeat;-webkit-mask:url(https://unpkg.com/lucide-static@0.452.0/icons/chevron-right.svg) center/contain no-repeat"></span>
+      </a>
+    </section>
+
+    <section style="margin-top:4px;padding:18px 18px 8px;background:#ffffff;border-radius:22px;box-shadow:0 1px 2px rgba(20,33,26,.05),0 4px 14px rgba(20,33,26,.06)">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+        <span style="width:18px;height:18px;background:#0f3a24;mask:url(https://unpkg.com/lucide-static@0.452.0/icons/clock.svg) center/contain no-repeat;-webkit-mask:url(https://unpkg.com/lucide-static@0.452.0/icons/clock.svg) center/contain no-repeat"></span>
+        <h2 style="margin:0;font-size:16px;font-weight:700">Horario de atención</h2>
+      </div>
+      <div id="hours-list"></div>
+    </section>
+
+    <p style="margin:6px 0 0;text-align:center;font-size:12px;color:#7a877e">© 2026 AgroVerde · <span id="footer-phone"></span></p>
+  </main>
+
+  <div id="toast" style="display:none;position:fixed;left:50%;bottom:24px;transform:translateX(-50%);padding:12px 18px;border-radius:999px;background:#14211a;color:#ffffff;font-size:14px;font-weight:500;box-shadow:0 10px 30px rgba(0,0,0,.25);z-index:10"></div>
+</div>
+
+<script>
+(function () {
+  // ---- Configuración editable ----
+  var CONFIG = {
+    phone: '+51 987 654 321',
+    waMessage: 'Hola, quisiera una cotización.',
+    fbUrl: 'https://facebook.com/',
+    igUrl: 'https://instagram.com/',
+    tiktokUrl: 'https://tiktok.com/',
+    webUrl: 'https://example.com/'
+  };
+
+  var digits = CONFIG.phone.replace(/\D/g, '');
+  var waMsg = encodeURIComponent(CONFIG.waMessage);
+
+  document.getElementById('wa-link').href = 'https://wa.me/' + digits + '?text=' + waMsg;
+  document.getElementById('fb-link').href = CONFIG.fbUrl;
+  document.getElementById('ig-link').href = CONFIG.igUrl;
+  document.getElementById('tiktok-link').href = CONFIG.tiktokUrl;
+  document.getElementById('web-link').href = CONFIG.webUrl;
+  document.getElementById('footer-phone').textContent = CONFIG.phone;
+
+  // [días (0=Dom), etiqueta, apertura, cierre] — horas en formato 24h decimal
+  var schedule = [
+    { days: [1, 2, 3, 4, 5], label: 'Lunes a viernes', open: 8, close: 18 },
+    { days: [6], label: 'Sábado', open: 8, close: 13 },
+    { days: [0], label: 'Domingo', open: null, close: null }
+  ];
+  var dayNames = ['dom', 'lun', 'mar', 'mié', 'jue', 'vie', 'sáb'];
+
+  function fmt(h) {
+    var ap = h < 12 ? 'a. m.' : 'p. m.';
+    var hh = h % 12 || 12;
+    return hh + ':00 ' + ap;
+  }
+
+  function findForDay(d) {
+    for (var i = 0; i < schedule.length; i++) {
+      if (schedule[i].days.indexOf(d) !== -1) return schedule[i];
+    }
+    return null;
+  }
+
+  function render() {
+    var now = new Date();
+    var d = now.getDay();
+    var t = now.getHours() + now.getMinutes() / 60;
+    var today = findForDay(d);
+    var isOpen = today.open != null && t >= today.open && t < today.close;
+    var label;
+
+    if (isOpen) {
+      label = 'Abierto · cierra ' + fmt(today.close);
+    } else if (today.open != null && t < today.open) {
+      label = 'Cerrado · abre ' + fmt(today.open);
+    } else {
+      for (var k = 1; k <= 7; k++) {
+        var nd = (d + k) % 7;
+        var s = findForDay(nd);
+        if (s.open != null) {
+          label = 'Cerrado · abre ' + (k === 1 ? 'mañana' : dayNames[nd]) + ' ' + fmt(s.open);
+          break;
+        }
+      }
+    }
+
+    var dot = document.getElementById('status-dot');
+    var labelEl = document.getElementById('status-label');
+    labelEl.textContent = label;
+    dot.style.background = isOpen ? '#96dc5a' : '#f0a35e';
+    dot.style.animation = isOpen ? 'pulse 2s infinite' : 'none';
+
+    var list = document.getElementById('hours-list');
+    list.innerHTML = '';
+    schedule.forEach(function (s) {
+      var cur = s.days.indexOf(d) !== -1;
+      var row = document.createElement('div');
+      row.style.cssText = 'display:flex;justify-content:space-between;align-items:center;padding:11px 10px;margin:0 -10px;border-radius:12px;font-size:15px;background:' +
+        (cur ? '#eaf5d8' : 'transparent') + ';font-weight:' + (cur ? 700 : 400) + ';color:' + (cur ? '#0f3a24' : '#3b4a40');
+
+      var dayLabel = document.createElement('span');
+      dayLabel.textContent = s.label + (cur ? ' (hoy)' : '');
+
+      var timeLabel = document.createElement('span');
+      timeLabel.textContent = s.open == null ? 'Cerrado' : fmt(s.open) + ' – ' + fmt(s.close);
+
+      row.appendChild(dayLabel);
+      row.appendChild(timeLabel);
+      list.appendChild(row);
+    });
+  }
+
+  render();
+  setInterval(render, 60000);
+
+  var toastTimer;
+  function flash(msg) {
+    var toast = document.getElementById('toast');
+    toast.textContent = msg;
+    toast.style.display = 'block';
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { toast.style.display = 'none'; }, 2200);
+  }
+
+  document.getElementById('share-btn').addEventListener('click', function () {
+    var data = { title: 'AgroVerde', text: 'Insumos agrícolas y asesoría de cultivos', url: location.href };
+    if (navigator.share) {
+      navigator.share(data).catch(function (e) {
+        if (e && e.name !== 'AbortError') flash('No se pudo compartir');
+      });
+      return;
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(location.href).then(function () {
+        flash('Enlace copiado');
+      }).catch(function () {
+        flash('No se pudo compartir');
+      });
+    } else {
+      flash('No se pudo compartir');
+    }
+  });
+})();
+</script>
+</body>
+</html>
